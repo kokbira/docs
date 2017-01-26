@@ -50,23 +50,33 @@ mecanismos de armazenamento de banco de dados:
 Instalando o CakePHP
 ====================
 
-O CakePHP utiliza `Composer <http://getcomposer.org>`_, uma ferramenta de
-gerenciamento de dependências para PHP 5.3+, como o método suportado oficial
-para instalação.
+Antes de iniciar, voc~e deve se certificar que possui a versão do PHO mais atualizada:
 
-Primeiramente, você precisará baixar e instalar o Composer se não
-o fez anteriormente. Se você tem cURL instalada, é tão fácil quanto executar o
-seguinte::
+.. code-block:: bash
 
-    curl -s https://getcomposer.org/installer | php
+    php -v
 
-Ou, você pode baixar ``composer.phar`` do
-`Site oficial do Composer <https://getcomposer.org/download/>`_.
+Você deve possuir instalado o PHP 5.5.9 (CLI) ou superior. A versão PHP do seu servidor WEB também deve ser 5.5.9 ou superior e idealmente deve ter a mesma versão do PHP da sua interface de linha de comando (CLI).
 
-Para sistemas Windows, você pode baixar o instalador
-`aqui <https://github.com/composer/windows-setup/releases/>`__. Mais
-instruções para o instalador Windows do Composer podem ser encontradas dentro
-do LEIA-ME `aqui <https://github.com/composer/windows-setup>`_.
+Instalando o composer
+---------------------
+
+- Installing Composer on Linux and macOS
+
+  #. Rode o script de instalação, conforme descrito na
+     `documentação oficial do Composer <https://getcomposer.org/download/>`_, e siga as instruções.
+  #. Execute o seguinte comando para mover o composer.phar para o diretório que está em seu caminho:
+         mv composer.phar /usr/local/bin/composer
+
+- Installing Composer on Windows
+
+  Para sistemas Windows, você pode baixar o instalador
+  `aqui <https://github.com/composer/windows-setup/releases/>`__. Mais
+  instruções para o instalador Windows do Composer podem ser encontradas dentro
+  do LEIA-ME `aqui <https://github.com/composer/windows-setup>`_.
+
+Criando um Projeto CakePHP
+--------------------------
 
 Agora que você baixou e instalou o Composer, você pode receber uma nova
 aplicação CakePHP executando::
